@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
   <link rel="icon" type="image/png" href="img/favicon.png">
-  
+
   <title>Помодоро</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -21,7 +21,7 @@
       <h2 class="todo__title">Задачи</h2>
       <ol class="todo__list">
         <li class="todo__item">
-          <div class="todo__item-wrapper">
+          <div class="todo__item--wrapper">
             <button class="todo__btn">Написать Pomodoro</button>
             <button class="todo__edit" aria-label="Редактировать"></button>
             <button class="todo__del" aria-label="Удалить"></button>
@@ -41,7 +41,7 @@
       </div>
 
       <div class="navigation">
-        <button class="navigation__btn navigation__btn_active" data-use="work">Помодоро</button>
+        <button class="navigation__btn navigation__btn--active" data-use="work">Помодоро</button>
         <button class="navigation__btn" data-use="break">Перерыв</button>
         <button class="navigation__btn" data-use="relax">Отдых</button>
       </div>
@@ -51,17 +51,18 @@
 
       <p class="title">Написать Pomodoro</p>
       <div class="control">
-        <button class="control__btn control__btn_start">Старт</button>
-        <button class="control__btn control__btn_stop">Стоп</button>
+        <button class="control__btn control__btn--start">Старт</button>
+        <button class="control__btn control__btn--stop">Стоп</button>
       </div>
     </div>
 
     <div class="count">
-      <p class="count_num">3</p>
-      <p class="count_text">Кол-во помодорок</p>
+      <p class="count__num">3</p>
+      <p class="count__text">Кол-во помодорок</p>
     </div>
   </div>
 
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

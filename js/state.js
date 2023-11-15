@@ -1,4 +1,4 @@
-const TIME__WORK = 1;
+const TIME__WORK = 15;
 
 export const state = {
   timeLeft: TIME__WORK * 60,

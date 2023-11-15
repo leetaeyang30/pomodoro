@@ -7,6 +7,9 @@ const secElement = document.querySelector('.time__seconds');
 
 const showTime = (seconds) => {
   minElement.textContent = Math.floor(seconds / 60);
+  if (minElement.textContent.length === 1) {
+    minElement.textContent = '0' + Math.floor(seconds / 60);
+  }
   secElement.textContent = seconds % 60;
 };
 
